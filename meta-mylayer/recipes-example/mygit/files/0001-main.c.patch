@@ -1,0 +1,11 @@
+diff --git a/main.c b/main.c
+index 2f38b04..ce3a768 100644
+--- a/main.c
++++ b/main.c
+@@ -4,5 +4,6 @@
+ int main(int argc, char* argv[])
+ {
+     printf("%s: Hello World from a source file in a git repository\n", argv[0]);
++    printf("%s: Patch Applied!!!\n", argv[0]);
+     exit(EXIT_SUCCESS);
+ }
