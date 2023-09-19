@@ -1,7 +1,7 @@
 # x86-64-yocto
 This repository contains a layer (meta-mylayer) with some recipes as examples about yocto using a x86-64 based machine
 
-# Compiling
+## Compiling
 You need to add the poky to the same level as [meta-mylayer](meta-mylayer) folder. Be sure you are checked out to the same revision as LAYERSERIES_COMPAT_meta-mylayer is set.
 To avoid installing dependencies, there is a [Dockerfile](Dockerfile) for building the yocto image, you can build the docker image using in the root foler of this repository:
 
@@ -25,4 +25,17 @@ For generating the yocto image:
 
 ```
 bitbake maherme-image
+```
+
+## Executing Image
+For executing the image you can use qemu, if you are in the host machine you can run:
+
+```
+runqemu nographic
+```
+
+If you are inside a docker container:
+
+```
+runqemu qemux86-64 slirp nographic
 ```
