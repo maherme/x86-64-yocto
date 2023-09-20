@@ -8,4 +8,4 @@ IMAGE_NAME = "maherme-image"
 IMAGE_INSTALL = "packagegroup-core-boot"
 
 IMAGE_INSTALL += "myhello myhello-doc myhello-maherme mymakefile mygit mystatic-staticdev mydynamic \
-                  mydynamic-dev mymath mysystemcall"
+                  mydynamic-dev mymath mysystemcall myautotools"
