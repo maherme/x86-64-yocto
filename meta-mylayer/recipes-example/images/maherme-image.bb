@@ -2,6 +2,8 @@ SUMMARY = "A small boot image made by maherme"
 LICENSE = "MIT"
 inherit core-image
 
+IMAGE_FEATURES += "splash"
+
 IMAGE_NAME = "maherme-image"
 
 # Core files for basic console boot
