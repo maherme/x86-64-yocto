@@ -6,3 +6,4 @@
 ###################
 build/
 poky/
+meta-openembedded/
