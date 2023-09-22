@@ -1,0 +1,12 @@
+diff --git a/init/main.c b/init/main.c
+index af50044deed5..700df9d3a44c 100644
+--- a/init/main.c
++++ b/init/main.c
+@@ -908,6 +908,7 @@ asmlinkage __visible void __init __no_sanitize_address __noreturn start_kernel(v
+ 	smp_prepare_boot_cpu();	/* arch-specific boot-cpu hooks */
+ 	boot_cpu_hotplug_init();
+ 
++    pr_notice("Starting maherme linux kernel\n");
+ 	pr_notice("Kernel command line: %s\n", saved_command_line);
+ 	/* parameters may set static keys */
+ 	jump_label_init();
